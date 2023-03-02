@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace, sans-serif;
+}
+body {
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+}
+.row > div {
+  background: greenyellow;
+  padding: 20px;
+  border-radius: 10px;
+}
+/* Flex Gred Start */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.col-1 {
+  flex: 0 1 calc(100% - 20px);
+}
+
+.col-2 {
+  flex: 0 1 calc(50% - 20px);
+}
+
+.col-3 {
+  flex: 0 1 calc(33.3% - 20px);
+}
+
+.col-4 {
+  flex: 0 1 calc(25% - 20px);
+}
+
+.col-5 {
+  flex: 0 1 calc(20% - 20px);
+}
+@media (max-width: 992px) {
+  .col-2,
+  .col-4,
+  .col-5 {
+    flex: 0 1 calc(100% - 20px);
+  }
+  .col-3 {
+    flex: 0 1 calc(50% - 20px);
+  }
+}
+@media (max-width: 592px) {
+  .col-3 {
+    flex: 0 1 calc(100% - 20px);
+  }
+}
+/* Flex Gred End */
+
+/* CSS Gred gred Start */
+
+.grid-css .item {
+  background: greenyellow;
+  padding: 20px;
+  border-radius: 10px;
+}
+.grid-css {
+  display: grid;
+  gap: 20px;
+}
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.grid-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+.grid-5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  .grid-3,
+  .grid-4,
+  .grid-5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 592px) {
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .grid-5 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CSS Gred gred End */
